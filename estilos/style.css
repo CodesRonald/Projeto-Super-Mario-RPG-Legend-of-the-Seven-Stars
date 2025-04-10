@@ -12,7 +12,7 @@
 
 body{
     background-image: linear-gradient(to bottom , rgb(14, 14, 112), rgb(15, 15, 15));
-    height: 100vh;
+    height: 100%;
 }
 
 header{
@@ -29,7 +29,6 @@ header > h1{
     padding-top: 50px;
     padding-bottom: 10px;
     text-align: center;
-    
 }
 
 header > p{
@@ -68,15 +67,18 @@ nav > a:hover{
 }
 
 section{
-    width: 97vw;
+    width: 99%;
     margin: auto;
     padding-top: 4vw;
-    padding-left: 1vw;  
+    padding-left: 0vw; 
+    padding-bottom: 14.5vw; 
 }
 
 section > p{
     color: white;
-    padding: 10px;
+    padding: 0px;
+    width: 95.5vw;
+    font-family: Arial, Helvetica, sans-serif, 16px;
 }
 
 section > p > abbr, a {
