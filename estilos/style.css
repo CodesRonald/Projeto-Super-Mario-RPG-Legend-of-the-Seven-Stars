@@ -50,7 +50,6 @@ header > p > a:hover{
     text-decoration: underline;
 }
 
-
 nav{
     background-color: rgba(15, 15, 15, 0.925);
 }
@@ -67,3 +66,32 @@ nav > a{
 nav > a:hover{
     background-color: rgba(17, 17, 49, 0.568);
 }
+
+section{
+    width: 97vw;
+    margin: auto;
+    padding-top: 4vw;
+    padding-left: 1vw;  
+}
+
+section > p{
+    color: white;
+    padding: 10px;
+}
+
+section > p > abbr, a {
+    text-decoration: none;
+    color: white;
+}
+
+section > p > abbr:hover{
+    text-decoration: underline;
+    background-color: blue;
+    color: yellow;
+}
+
+section > p > abbr:hover{
+    text-decoration: underline;
+}
+
+
