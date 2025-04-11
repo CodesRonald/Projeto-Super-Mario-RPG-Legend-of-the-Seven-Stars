@@ -11,8 +11,6 @@
 }
 
 
-
-
 body{
     background-image: linear-gradient(to bottom , rgb(14, 14, 112), rgb(15, 15, 15));
     height: 100%;
@@ -79,10 +77,11 @@ section{
     margin: 1vw 1vw 1vw 2vw;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 3px 3px 10px 2px  rgba(255, 0, 0, 0.356);
-    position: relative;
-    width:27.5%;
+    width:500px;
     max-width: 500px;
     min-width: 500px;
+    max-height: 500px;
+    min-height: 500px;
 }
 
 section > p{
@@ -107,4 +106,45 @@ section > p > abbr:hover{
     text-decoration: underline;
 }
 
+section > picture  img{
+    max-width: 440px;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 90%; /* Responsivo em telas menores */
+        max-width: none; /* Remove limitação de largura fixa */
+        min-width: auto; /* Torna dinâmica */
+        height: 100%; /* Altura ajustável */
+        overflow-wrap: break-word; /* Quebra linhas quando necessário */
+        word-wrap: break-word; /* Compatibilidade com navegadores antigos */
+        overflow: hidden; /* Previne que o texto ultrapasse os limites da caixa */
+        text-align: justify; /* Garante alinhamento */
+    }
+
+    section > picture img {
+        max-width: 100%; /* Ajusta a imagem à largura da seção */
+        height: auto; /* Mantém proporção da imagem */
+        display: block; /* Garante que fique dentro do layout */
+        margin: auto; /* Centraliza a imagem */
+    }
+
+    section > p {
+        font-size: 1.2em; /* Ajusta o tamanho do texto */
+        line-height: 1.5; /* Melhora a legibilidade */
+        text-align: justify; /* Garante alinhamento ao texto */
+    }
+
+    header > h1 {
+        font-size: 8vw; /* Ajusta tamanho do título */
+    }
+
+    header > p {
+        font-size: 4vw; /* Ajusta o tamanho do parágrafo */
+    }
+
+    nav > a {
+        font-size: 1.2em; /* Reduz o tamanho da fonte para telas pequenas */
+    }
+}
 
