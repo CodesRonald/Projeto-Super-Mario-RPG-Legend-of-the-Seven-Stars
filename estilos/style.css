@@ -10,6 +10,9 @@
     src: url(../fonts/black_clover_display/Black\ Clover\ Display.otf);
 }
 
+
+
+
 body{
     background-image: linear-gradient(to bottom , rgb(14, 14, 112), rgb(15, 15, 15));
     height: 100%;
@@ -69,22 +72,23 @@ nav > a:hover{
 section{
     background-image: linear-gradient(to bottom , rgb(14, 14, 112), rgb(15, 15, 15));
     padding-top: 4vw;
-    padding-left: 2vw; 
-    padding-bottom: 14.5vw;
-    text-align:justify;
-    background-color: green;
-    width: 28vw;
-    height: 10vw;
+    padding-left: 2vw;
+    padding-right: 2vw; 
+    padding-bottom: 2vw;
+    justify-content: center;
     margin: 1vw 1vw 1vw 2vw;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 3px 3px 10px 2px  rgba(255, 0, 0, 0.356)
+    box-shadow: 3px 3px 10px 2px  rgba(255, 0, 0, 0.356);
+    position: relative;
+    width:27.5%;
+    max-width: 500px;
+    min-width: 500px;
 }
 
 section > p{
 
     color: white;
     padding-top: 10px;
-    display: inline-block;
     font-family: Arial, Helvetica, sans-serif, 16px;
 }
 
